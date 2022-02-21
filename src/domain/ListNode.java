@@ -28,4 +28,11 @@ public class ListNode {
         this.val = val;
         this.next = next;
     }
+
+    public void print(ListNode node) {
+        while (node != null) {
+            System.out.println(node.val);
+            node = node.next;
+        }
+    }
 }

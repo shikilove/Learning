@@ -23,4 +23,13 @@ public class TreeNode {
     public TreeNode(int val) {
         this.val = val;
     }
+
+    public void print(TreeNode node) {
+        if (node == null) {
+            return;
+        }
+        System.out.println(node.val);
+        print(node.left);
+        print(node.right);
+    }
 }
